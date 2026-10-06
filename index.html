@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frontline Strike</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="hud">
+      <div id="top-bar">
+        <div class="panel">
+          <span class="label">HEALTH</span>
+          <span id="health">100</span>
+        </div>
+        <div class="panel">
+          <span class="label">SCORE</span>
+          <span id="score">0</span>
+        </div>
+        <div class="panel">
+          <span class="label">WAVE</span>
+          <span id="wave">1</span>
+        </div>
+      </div>
+
+      <div id="crosshair">
+        <span></span>
+        <span></span>
+      </div>
+
+      <div id="status-text">Click to lock pointer and start</div>
+    </div>
+
+    <div id="overlay" class="visible">
+      <div class="overlay-panel">
+        <h1>Frontline Strike</h1>
+        <p>WASD to move • Mouse to aim • Click to shoot • R to restart</p>
+        <button id="start-button">Play</button>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/three@0.161.0/build/three.min.js"></script>
+    <script src="game.js"></script>
+  </body>
+</html>
